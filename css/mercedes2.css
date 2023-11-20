@@ -1,0 +1,213 @@
+html{
+    scroll-behavior: smooth;
+    scroll-margin-top: 0px;
+    
+}
+#frame1{
+margin-top: 2vh;
+
+
+}
+#header, #frame1{
+    background-image: url(/image/circle-scatter-haikei.png);
+   background-repeat: repeat;
+   background-size: cover;
+   background-position: center;
+}
+#first{
+
+    background-color: red;
+}
+#card1{
+    /* background-image: url(/image/mercedes\ s\ class.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top; */
+
+}
+#tick{
+    width: 30px;
+    height: auto;
+}
+body{
+    background-image: url('/image/blob-scene-haikei.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#processing{
+   background-color: black;
+    margin-left: 50%;
+    border-radius: 6px;
+    position:sticky;
+
+}
+#rate{
+    gap: 10px;
+}
+#loading{
+   border-color: rgb(29, 104, 151);
+    margin-left: 50%;
+    width: 50px;
+    background-color: transparent;
+ padding: 5px;
+ gap: 8px;
+ background-color: black;
+ width: fit-content;
+
+
+}
+#showcase{
+    /* display: flex; */
+ grid-row: 3;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+    
+    
+}
+
+#success{
+    border-color: rgb(8, 189, 8);
+    margin-left: 50%;
+    /* display: none; */
+    width: 50px;
+    background-color: transparent;
+    padding: 5px;
+    gap: 8px;
+    background-color: black;
+    width: fit-content;
+}
+#failed{
+    border-color: rgb(192, 29, 29);
+    margin-left: 50%;
+    
+    width: 50px;
+    background-color: transparent;
+    padding: 5px;
+    gap: 8px;
+    background-color: black;
+    width: fit-content;
+}
+.search{
+    justify-content: center;
+    display: flex;
+}
+#searchform{
+    width: 190px;
+    margin-top: 20px;
+   padding:6px ;
+}
+#searchform:hover{
+    border-radius: 4px;
+    width: 410px;
+    
+    cursor: pointer;
+    transition: 2s, width 2s;
+    border: 1px solid black;
+    transition: ease-out 2s;
+    box-shadow: 1px 1px 5px white;
+}
+@media only screen and (max-width: 640px){
+    #searchform:focus{
+        border-radius: 4px;
+        width: 410px;
+        
+        cursor: pointer;
+        transition: 2s, width 2s;
+        border: 1px solid black;
+        transition: ease-out 2s;
+        box-shadow: 1px 1px 5px white;
+    }
+}
+@media only screen and (min-width: 640px){
+    #searchform{
+        width: 390px;
+        margin-top: 20px;
+       padding:6px ;
+    }
+    #searchform:focus{
+        border-radius: 4px;
+        width: 490px;
+        
+        cursor: pointer;
+        transition: 2s, width 2s;
+        border: 1px solid black;
+        transition: ease-out 2s;
+        box-shadow: 1px 1px 5px white;
+    }
+    #searchform:hover{
+        border-radius: 4px;
+        width: 490px;
+        
+        cursor: pointer;
+        transition: 2s, width 2s;
+        border: 1px solid black;
+        transition: ease-out 2s;
+        box-shadow: 1px 1px 5px white;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #searchform{
+        width: 550px;
+        margin-top: 20px;
+       padding:6px ;
+    }
+    #searchform:focus{
+        border-radius: 4px;
+        width: 1100px;
+        
+        cursor: pointer;
+        transition: 2s, width 2s;
+        border: 1px solid black;
+        transition: ease-out 2s;
+        box-shadow: 1px 1px 5px white;
+    }
+    #searchform:hover{
+        border-radius: 4px;
+        width: 910px;
+        
+        cursor: pointer;
+        transition: 2s, width 2s;
+        border: 1px solid black;
+        transition: ease-out 2s;
+        box-shadow: 1px 1px 5px white;
+    }
+  }
+
+#searchform::after{
+    transition: 2s;
+}
+#searchButton{
+    padding: 6px;
+}
+#searchButton:hover{
+    background-color: white;
+    color:rgb(20, 20, 20);
+    
+}
+
+.loader {
+    
+    border: 4px solid black;
+    border-radius: 50%;
+    border-top: 4px solid rgb(29, 104, 151);
+    border-right: 4px solid rgb(29, 104, 151);
+    border-radius: 22px;
+    border-bottom: 4px solid rgb(29, 104, 151);
+    width: 35px;
+    height: 35px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+  #buyBt{
+   margin: auto;
+   width: auto;
+  }

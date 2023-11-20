@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/mercedes.css">
+  <link rel="stylesheet" href="/css/mercedes2.css">
+ <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+ 
+    
+
+<script type="text/javascript">
+  emailjs.init('ZmHkTy46tR-h0LKRZ')
+</script>
+    <title>Mercedes Website</title>
+</head>
+<body class="selection:bg-black selection:text-green-700  text-2xl sm:text-xl  top-0 text-black dark:text-white bg-slate-100 ">
+    <header id="header"  class="sticky z-10 top-0 bg-slate-200 ">
+        <!-- <img src="/image/circle-scatter-haikei.png" alt="headerImage" class="bg-contain bg-no-repeat bg-center w-full" > -->
+        <section class="flex justify-between items-center ">
+            <button class="text-xl rounded-sm border-2 border-black bg-black text-white " id="menu">Menu</button>
+            <p class="text-xl font-serif font-semibold text-white">Mercedes Website</p>
+            <button  class="bg-slate-300 w-fit sm:text-xl text-3xl sm:hidden">&#9776</button>
+            <section class="   sm:inline-flex gap-2 hidden ">
+               <a href="https://www.google.com/search?q=tiktok+login&sca_esv=573265106&sxsrf=AM9HkKnshEu577Ow-1Tin3mGST1ZGWHhsw%3A1697225459650&ei=85opZamXJ_797_UPvYOE8AY&oq=tiklogin&gs_lp=Egxnd3Mtd2l6LXNlcnAiCHRpa2xvZ2luKgIIADIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeSLyrAVC1CljCoAFwBXgBkAEAmAGqAqAB9QiqAQMyLTS4AQHIAQD4AQHCAgoQABhHGNYEGLADwgINEAAYigUYyQMYsAMYQ8ICChAAGIoFGLADGEPCAg0QABiKBRixAxiDARhDwgIKEAAYigUYsQMYQ-IDBBgAIEGIBgGQBgo&sclient=gws-wiz-serp"><img src="/image/tiktok.png" alt="tiktok" class="rounded-full w-6 h-fit " ></a> 
+               <a href="https://www.instagram.com/accounts/login/?hl=en"><img src="/image/instagram.png" alt="Instagram" class="rounded-full w-6 h-fit" style="" ></a> 
+               <a href="https://web.facebook.com/?_rdc=1&_rdr"><img src="/image/facebook.png" alt="facebook" class="rounded-full w-6 h-fit"></a> 
+           
+            </section>
+        </section>
+        
+<section>
+    <div id="menuContent" class="absolute top-9 inline-flex left-0 gap-2 rounded-md border-black border-2 bg-black text-white px-2 ">
+        <ul class="hover:animate-bounce duration-100   cursor-pointer hover:text-white p-0 hover:rounded-md hover:px-2 hover:font-semibold"><a  href="#card1" class="">⬆️Top</a></ul>
+        <ul class="hover:animate-bounce duration-100 cursor-pointer hover:text-white p-0 hover:rounded-md hover:px-2 hover:font-semibold"><a  href="#rate" class="">⭐Rate Us</a></ul>
+        <ul class="hover:animate-bounce duration-100 cursor-pointer hover:text-white p-0 hover:rounded-md hover:px-2 hover:font-semibold"><a  href="#contact" class="">📞Contact</a></ul>
+        <ul id="sellLink" class="hover:animate-bounce duration-100 cursor-pointer hover:text-white p-0 hover:rounded-md hover:px-2 hover:font-semibold"><a target="_blank"   href="/main/sell.html" class="">💵Sell</a></ul>
+        <ul id="sellLink" class="hover:animate-bounce duration-100 cursor-pointer hover:text-white p-0 hover:rounded-md hover:px-2 hover:font-semibold"><a target="_blank"   href="/main/myCarts.html" class="">🛒My Carts</a></ul>
+    </div>
+</section>
+<hr class="border-2 border-black">
+    </header>
+<section id="loading" class=" border-2 top-8 sticky rounded-md flex">
+    <div class="loader "></div>
+    <div class="font-semibold text-white align-middle">loading...</div>
+</section> 
+<section id="success" class=" border-2 top-8 sticky rounded-md flex ">
+    <img id="tick" src="/image/tick.jpg" alt="">
+    <div class="font-semibold text-white align-middle">Successfull</div>
+</section>      
+<section id="failed" class=" p-4 border-2 top-8 sticky rounded-md flex">
+    <img id="tick" src="/image/fail.jpg" alt="">
+    <div class=" font-semibold text-red-600 align-middle">Failed</div>
+</section>  
+<div class="search">
+    <form action="#" >
+            <input class="rounded-md   text-center" type="text" width="190px" placeholder="search" id="searchform">
+            <button onclick="search()" type="button" id="searchButton" class="text-white hover:font-semibold bg-slate-500 rounded-md ">Search</button>
+        </form>
+        <textarea" id="responseArea" cols="30" rows="10"></textarea>
+    </div>
+<!-- <iframe id="frame1" class=" rounded-md w-auto h-fit resize-y mx-auto" src="/main/sell.html" frameborder="0"></iframe> -->
+<section id="showcase" class="md:flex">
+
+<section id="card1" class="scroll-mt-1 my-7   md:w-44  text-white shadow-lg shadow-pink-400  sm:mx-auto  rounded-sm max-w-2xl  border-2 border-slate-300 font-serif p-2  sm:w-fit text-base sm:text-xl h-fit">      <!--this is fot the first mercedes card-->
+<div class=" w-full h-full justify-center ">
+    <img class="rounded-full w-52 h-32 sm:h-52 sm:hover:h-56 sm:w-72 sm:hover:w-80 md:w-full md:h-full md:rounded-sm sm:rounded-md md:float-right  md:hover:h-full md:hover:w-full  " src="/image/mercedes s class.jpg" alt="" >
+</div>
+<div   >
+    <p class="sm:-mt-32 sm:float-right justify-center font-semibold underline md:mt-0 md:justify-center  md:float-none ">  S-Class Specs, Features and Price</p>
+    <blockquote class="text-gray-200  pt-3 inline-table">
+      
+The Mercedes-Benz S-Class has 1 Diesel Engine and 1 Petrol Engine on offer. 
+The Diesel engine is 2925 cc while the Petrol engine is 2999 cc . It is available with Automatic transmission.
+Depending upon the variant and fuel type the S-Class has a mileage of 13.38 kmpl . 
+The S-Class is a 5 seater 6 cylinder car and has length of 5289mm, width of 2109mm and a wheelbase of 3216mm.
+    </blockquote>
+    <button class="border-2 border-black p-2 bg-slate-600 rounded-md cursor-pointer" id="buyBt">Buy</button>
+ 
+</div>
+
+
+
+</section>
+<section class="  my-7  text-white shadow-lg md:w-44 shadow-pink-400  sm:mx-auto  rounded-sm max-w-2xl  border-2 border-slate-300 font-serif p-2  sm:w-fit text-base sm:text-xl h-fit">      <!--this is fot the first mercedes card-->
+    <div class=" w-full h-full justify-center ">
+        <img class="rounded-full w-52 h-32 sm:h-52 sm:hover:h-56 sm:w-72 sm:hover:w-80 md:w-full md:h-full md:rounded-sm sm:rounded-md md:float-right  md:hover:h-full md:hover:w-full  " src="/image/mercedes 2.jpg" alt="" >
+    </div>
+    <div id="card1"  >
+        <p class="sm:-mt-32 sm:float-right justify-center font-semibold underline md:mt-0 md:justify-center  md:float-none ">  S-Class Mercedes benz</p>
+        <blockquote class= "my-7   text-gray-200  pt-3 inline-table">
+          
+            A new plug-in hybrid S580e model joins the lineup this year and features a 510-hp hybrid powertrain that's comprised of an inline-six and an electric motor. Otherwise, life in the lavish Mercedes-Benz S-class goes uninterrupted for 2023 with only subtle changes to the available paint and upholstery options.
+        </blockquote>
+        <button class="border-2 border-black p-2 bg-slate-600 rounded-md cursor-pointer" id="buyBt">Buy</button>
+    </div>
+    </section>
+    <section class="my-7    text-white shadow-lg md:w-44 shadow-pink-400  sm:mx-auto  rounded-sm max-w-2xl  border-2 border-slate-300 font-serif p-2  sm:w-fit text-base sm:text-xl h-fit">      <!--this is fot the first mercedes card-->
+        <div class=" w-full h-full justify-center ">
+            <img class="rounded-full w-52 h-32 sm:h-52 sm:hover:h-56 sm:w-72 sm:hover:w-80 md:w-full md:h-full md:rounded-sm sm:rounded-md md:float-right  md:hover:h-full md:hover:w-full  " src="/image/mercedes tuck.jpg" alt="" >
+        </div>
+        <div id="card1"  >
+            <p class="sm:-mt-32 sm:float-right justify-center font-semibold underline md:mt-0 md:justify-center  md:float-none ">  S-Class Specs Mercedes benz truck</p>
+            <blockquote class="text-gray-200  pt-3 inline-table">
+              
+                Launched in 2012, Mercedes-Benz Antos features on-road heavy-duty distribution trucks rating from 18 to 44 tonnes of gross combined weight (moreover, heavy haulage up to 120 tonnes). 
+                Mercedes-Benz Antos trucks are also suitable for applications such as grocery and refrigerated transport, tanker, dry-bulk haulage or retail supply services. Mercedes-Benz Antos is offered in 6 day cab variants and equipped with rigid or tractor chassis (2 and 3 axles).
+                 Mercedes-Benz Antos truck can be equipped with one of 13 power ratings of 6-cylinder Euro VI engines (OM 936 - 7.7L, OM 470 - 10.7L and OM 471 - 12.8L) rated from 175 kW (238 hp) to 375 kW (510 hp). 
+            </blockquote>
+            <button class="border-2 border-black p-2 bg-slate-600 rounded-md cursor-pointer" id="buyBt">Buy</button>
+        </div>
+        </section>
+        <section class="  my-7   text-white shadow-lg md:w-44 shadow-pink-400  sm:mx-auto  rounded-sm max-w-2xl  border-2 border-slate-300 font-serif p-2  sm:w-fit text-base sm:text-xl h-fit">      <!--this is fot the first mercedes card-->
+            <div class=" w-full h-full justify-center ">
+                <img class="rounded-full w-52 h-32 sm:h-52 sm:hover:h-56 sm:w-72 sm:hover:w-80 md:w-full md:h-full md:rounded-sm sm:rounded-md md:float-right  md:hover:h-full md:hover:w-full  " src="/image/mercedes yatch.jpg" alt="" >
+            </div>
+            <div id="card1"  >
+                <p class="sm:-mt-32 sm:float-right justify-center font-semibold underline md:mt-0 md:justify-center  md:float-none ">  S-Class  Mercedes-Benz yatch</p>
+                <blockquote class="text-gray-200  pt-3 inline-table h-1 resize-y">
+                    Tenders & Toys onboard the yacht MERCEDES include 2 (two person) Yamaha Waverunners, 2 (one person) Ocean Kayaks, 1 15' Novorania w/90hp Yamaha, 2 sets dive gear, 8 tanks & dive compressor, Ample snorkel gear, water skis, fishing equipment, Guest Accommodation One King Stateroom Two Queen Staterooms Audio Visual Equipment and Deck Facilities: Main Salon TV/VCR/CD/Cassette, video, music & Book libraries, board games. Powder room on main deck, Formal dining in main salon w/wetbar seating for 6. Aft deck seating for 4 Upperdeck seating for 18 w/dining table that seats 10, BBQ Cockpit and swim platform with swim ladder Communications: SSB, VHF, Sat Phone, Sky Phone, Cell Phone
+                </blockquote>
+                <button class="border-2 border-black p-2 bg-slate-600 rounded-md cursor-pointer" id="buyBt">Buy</button>
+            </div>
+            
+            </section>
+      
+                
+        </section>
+
+
+        <div id="contact" class=" p-2 scroll-mt-8 relative rounded-sm border-2 border-black shadow-lg shadow-pink-400 sm:mx-auto  text-white w-fit h-fit">
+
+    <form id="form">
+        <div class="field">
+          <label for="from_name">Sender's Name:</label>
+          <input class="w-full  bg-slate-600  rounded-md border-2 border-black p-2"  type="text" name="from_name" id="from_name">
+        </div>
+        <div class="field">
+          <label for="to_name">Recipient's Name:</label>
+          <input class="w-full  bg-slate-600  rounded-md border-2 border-black p-2" type="text" name="to_name" id="to_name">
+        </div>
+       
+        <div class="field">
+          <label for="email_id">Recipient's email:</label>
+          <input class="w-full  bg-slate-600  rounded-md border-2 border-black p-2" type="text" name="email_id" id="email_id">
+        </div>
+        <div class="field">
+            <label for="message">message:</label>
+            <input class="w-full   bg-slate-600 resize-y rounded-md border-2 border-black p-2" type="text" name="message" id="message">
+          </div>
+        <input class="border-2 border-black p-2 bg-slate-600 rounded-md cursor-pointer  " type="submit" id="button" value="Send" >
+    </form>
+    
+     
+    </div>
+
+
+    
+    <footer class="my-10 w-full h-fit bg-black">
+       
+           <section id="rate" class="  flex justify-center">
+            <img id="imageSta1" src="/image/star.jpg" alt="" class="w-8 h-fit cursor-pointer">
+            <p class="text-3xl align-middle cursor-pointer" id="t1">&#127775</p>
+            <img id="imageSta2" src="/image/star.jpg" alt="" class="w-8 h-fit cursor-pointer">
+            
+            <p id="t2" class="text-3xl align-middle cursor-pointer">&#127775</p>
+            <img id="imageSta3" src="/image/star.jpg" alt="" class="w-8 h-fit cursor-pointer">
+            
+            <p id="t3" class="text-3xl align-middle cursor-pointer"> &#127775</p>
+            <img id="imageSta4" src="/image/star.jpg" alt="" class="w-8 h-fit cursor-pointer">
+            
+            <p id="t4" class="text-3xl align-middle cursor-pointer">&#127775</p>
+            <img id="imageSta5" src="/image/star.jpg" alt="" class="w-8 h-fit cursor-pointer">
+            
+            <p id="t5" class="text-3xl align-middle cursor-pointer">&#127775</p>
+            
+              
+        </section>
+        <section  class="flex justify-center">
+            <p id="face1"  class=" text-3xl align-middle cursor-pointer">&#128545</p>
+            <p id="face2"  class="text-3xl align-middle cursor-pointer">&#128544</p>
+            <p id="face3"   class="text-3xl align-middle cursor-pointer">&#128515</p>
+            <p id="face4"  class="text-3xl align-middle cursor-pointer">&#128513</p>
+            <p id="face5"  class="text-3xl align-middle cursor-pointer">&#128526</p>
+
+            
+        </section>
+        <section class=" justify-center p-2 mt-1  sm:hidden gap-2 flex ">
+            <a href="https://www.google.com/search?q=tiktok+login&sca_esv=573265106&sxsrf=AM9HkKnshEu577Ow-1Tin3mGST1ZGWHhsw%3A1697225459650&ei=85opZamXJ_797_UPvYOE8AY&oq=tiklogin&gs_lp=Egxnd3Mtd2l6LXNlcnAiCHRpa2xvZ2luKgIIADIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeSLyrAVC1CljCoAFwBXgBkAEAmAGqAqAB9QiqAQMyLTS4AQHIAQD4AQHCAgoQABhHGNYEGLADwgINEAAYigUYyQMYsAMYQ8ICChAAGIoFGLADGEPCAg0QABiKBRixAxiDARhDwgIKEAAYigUYsQMYQ-IDBBgAIEGIBgGQBgo&sclient=gws-wiz-serp"><img src="/image/tiktok.png" alt="tiktok" class="rounded-full w-6 h-fit " ></a> 
+            <a href="https://www.instagram.com/accounts/login/?hl=en"><img src="/image/instagram.png" alt="Instagram" class="rounded-full w-6 h-fit" style="" ></a> 
+            <a href="https://web.facebook.com/?_rdc=1&_rdr"><img src="/image/facebook.png" alt="facebook" class="rounded-full w-6 h-fit"></a> 
+        
+         </section>
+         <section class="text-white justify-center flex">
+            <p id="year">Copyright &copy; All rights reserved <span class="date"></span></p> 
+         </section>
+        
+    </footer>
+    
+    
+    
+    
+    
+    <script src="/js/mercedes.js"></script>
+   <script src="/js/search.js"></script>
+   <script src="/js/rates.js"></script>
+</body>
+</html>

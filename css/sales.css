@@ -1,0 +1,12 @@
+#Sales{
+    background-color: slategrey;
+    border: 4px;
+    border-color: red;
+}
+#Sales:hover{
+    padding: 3px;
+}
+#paragraphId{
+    background-color: slategray;
+    text-overflow: ellipsis;
+}
